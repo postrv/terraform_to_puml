@@ -1,0 +1,19 @@
+[package]
+name = "terraform_to_puml"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.0"
+actix-files = "0.6.5"
+dotenv = "0.15.0"
+serde = { version = "1.0.202", features = ["derive"] }
+serde_json = "1.0.117"
+tera = "1.19.1" # for templating
+tokio = { version = "1.37.0", features = ["full"] }
+ruml= "0.1.0" # hypothetical library for PUML generation
+async-openai = "0.21.0" # hypothetical library for AI-assisted editing
+terraform-parser = "0.1.0" # hypothetical library for parsing Terraform
+env_logger = "0.11.3"
+log = "0.4.21"
+regex = "1.10.4"
