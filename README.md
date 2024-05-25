@@ -18,5 +18,5 @@ and support for integrating whole terraform repositories, rather than just indiv
 7. You can then add the terraform code to the editor pane and give instructions to the OpenAI API to make changes to the code ![step3](images/step3.png)
 8. The changes to the PUML will be shown in the right-hand pane and the diagram will be rendered below
 
-
+Thanks for reading!
 
