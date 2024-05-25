@@ -3,20 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Terraform to PUML</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #03DAC6;
+        }
+        form {
+            background-color: #1E1E1E;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            width: 80%;
+            max-width: 600px;
+        }
+        textarea {
+            width: 100%;
+            background-color: #2E2E2E;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #03DAC6;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #00BFA5;
+        }
+        #result {
+            background-color: #1E1E1E;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            width: 80%;
+            max-width: 600px;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body>
 <h1>Terraform to PUML</h1>
 <form id="terraformForm">
-    <textarea name="code" rows="10" cols="50" placeholder="Enter your Terraform code here..."></textarea>
+    <textarea name="code" rows="10" placeholder="Enter your Terraform code here..."></textarea>
     <br>
     <button type="submit">Convert to PUML</button>
 </form>
 
 <h1>AI-Assisted Editing</h1>
 <form id="aiForm">
-    <textarea name="current_code" rows="10" cols="50" placeholder="Enter current Terraform code here..."></textarea>
+    <textarea name="current_code" rows="10" placeholder="Enter current Terraform code here..."></textarea>
     <br>
-    <textarea name="description" rows="5" cols="50" placeholder="Describe the changes..."></textarea>
+    <textarea name="description" rows="5" placeholder="Describe the changes..."></textarea>
     <br>
     <button type="submit">Edit Code</button>
 </form>
